@@ -13,11 +13,13 @@ import { MagnifyingGlass, Tote, User } from 'phosphor-react';
 import { colors} from '@rmuikit/tokens'
 // import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { useState } from 'react';
+import { useCart } from '../../hooks/useCart';
 
 export const Topbar = () => {
-  const [bookmarksChecked, setBookmarksChecked] = useState(true);
-  const [urlsChecked, setUrlsChecked] = useState(false);
-  const [person, setPerson] = useState('pedro');
+    // const [bookmarksChecked, setBookmarksChecked] = useState(true);
+    // const [urlsChecked, setUrlsChecked] = useState(false);
+    // const [person, setPerson] = useState('pedro');
+    // const { total  } = useCart();
 
   return (
     <Container>
@@ -67,3 +69,4 @@ export const Topbar = () => {
     </Container>
   )
 }
+Container.displayName = 'Container'
