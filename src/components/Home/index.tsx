@@ -1,6 +1,6 @@
 import { Carousel } from "../Carousel";
 import { SkillsCard } from "./components/SkillsCard";
-import { Container, HomerContainer, Box } from "./style";
+import { Container, HomerContainer, BestSellingCategories } from "./style";
 
 export type Slide = {
   id: number;
@@ -11,12 +11,6 @@ export type Slide = {
 export type HomeProps = {
   slides: Slide[];
 };
-// const containerStyle = {
-//   height: '70vh',
-//   width: '1400px',
-//   margin: '0 auto',
-
-// }
 
 export const MainPage = ({ slides }: HomeProps) => {
   return (
@@ -27,6 +21,10 @@ export const MainPage = ({ slides }: HomeProps) => {
         </Container>
       </HomerContainer>
       <SkillsCard />
+      <BestSellingCategories>
+        Best selling Categories
+      </BestSellingCategories>
+
     </>
   );
 };
