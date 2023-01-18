@@ -4,7 +4,6 @@ export type Slide = {
   id: number,
   imageUrl: string,
   title: string
-
 }
 export type CarouselProps = {
   slides: Slide[],

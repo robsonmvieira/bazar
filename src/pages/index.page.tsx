@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Carousel } from '../components/Carousel'
+import { MainPage } from '../components/Home'
 import { Topbar } from '../components/TopBar'
 
 
@@ -21,14 +21,8 @@ export default function Home() {
   return (
     <div>
       <Topbar />
-      <div style={{
-        background: '#F6F9FC'
-      }}>
-
-        <div style={containerStyle}>
-          <Carousel slides={slides} parentWidth={1400} />
-          </div>
-      </div>
+      <MainPage slides={slides} />
+      
     </div>
   )
 }
