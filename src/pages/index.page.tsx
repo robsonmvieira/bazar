@@ -12,16 +12,18 @@ export default function Home() {
     {id: 5, imageUrl: 'images/slider/pexels-math-90946.jpg', title: 'Compre uma Math'},
   ])
 
-  const containerStyle = {
-    height: '70vh',
-    width: '1400px',
-    margin: '0 auto',
+  const [bestSellingCategories, setBestSellingCategories] = useState([
+    {id: 1, imageUrl: 'images/bestSellingCategories/shoes.jpg', title: "Quick View" },
+    {id: 2, imageUrl: 'images/bestSellingCategories/electronics.jpg', title: "Quick View" },
+    {id: 3, imageUrl: 'images/bestSellingCategories/perfum.jpg', title: "Quick View" },
+    {id: 4, imageUrl: 'images/bestSellingCategories/pincels.jpg', title: "Quick View" },
+  ])
 
-  }
+
   return (
     <div>
       <Topbar />
-      <MainPage slides={slides} />
+      <MainPage slides={slides} bestSellingCategories={bestSellingCategories} />
       
     </div>
   )
