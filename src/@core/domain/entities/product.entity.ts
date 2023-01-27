@@ -7,36 +7,35 @@ export type ProductProps = {
 }
 
 export class Product {
-  private constructor(private data: ProductProps) {
-    if (data) {
-      Object.assign(this, data);
+  private constructor(private props: ProductProps) {
+    if (props) {
+      Object.assign(this, props);
     }
   }
 
 
-  static create(data: ProductProps): Product {
-    return new Product(data);
+  static create(props: ProductProps): Product {
+    return new Product(props);
   }
 
   toJSON(): Object {
-    return JSON.stringify(this.data);
+    return JSON.stringify(this.props);
   }
 
-  get id(): string {
-    return this.data.id;
+  getId(): string {
+    return this.props.id;
   }
 
-  get name(): string {
-    return this.data.name;
+  getName(): string {
+    return this.props.name;
   }
-   get description(): string {
-    return this.data.description;
+   getDescription(): string {
+    return this.props.description;
    }
 
-  get price(): number {
-    return this.data.price;
+  getPrice(): number {
+    return this.props.price;
   }
-  
 
 
 }

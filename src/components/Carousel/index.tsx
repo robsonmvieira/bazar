@@ -78,7 +78,7 @@ export type CarouselProps = {
 //   )
 // }
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 
 const slideStyles = {
   width: "100%",

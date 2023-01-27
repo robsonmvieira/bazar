@@ -1,4 +1,3 @@
-import { Star } from "phosphor-react";
 import { Carousel } from "../Carousel";
 import { CardProps, CategoryCard } from "./components/CategoryCard";
 import { SkillsCard } from "./components/SkillsCard";
