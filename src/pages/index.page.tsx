@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Carousel } from '../components/Carousel'
+import { MainPage } from '../components/Home'
 import { Topbar } from '../components/TopBar'
 
 
@@ -12,23 +12,19 @@ export default function Home() {
     {id: 5, imageUrl: 'images/slider/pexels-math-90946.jpg', title: 'Compre uma Math'},
   ])
 
-  const containerStyle = {
-    height: '70vh',
-    width: '1400px',
-    margin: '0 auto',
+  const [bestSellingCategories, setBestSellingCategories] = useState([
+    {id: 1, imageUrl: 'images/bestSellingCategories/shoes.jpg', title: "Quick View" },
+    {id: 2, imageUrl: 'images/bestSellingCategories/electronics.jpg', title: "Quick View" },
+    {id: 3, imageUrl: 'images/bestSellingCategories/perfum.jpg', title: "Quick View" },
+    {id: 4, imageUrl: 'images/bestSellingCategories/pincels.jpg', title: "Quick View" },
+  ])
 
-  }
+
   return (
     <div>
       <Topbar />
-      <div style={{
-        background: '#F6F9FC'
-      }}>
-
-        <div style={containerStyle}>
-          <Carousel slides={slides} parentWidth={1400} />
-          </div>
-      </div>
+      <MainPage slides={slides} bestSellingCategories={bestSellingCategories} />
+      
     </div>
   )
 }

@@ -4,7 +4,6 @@ export type Slide = {
   id: number,
   imageUrl: string,
   title: string
-
 }
 export type CarouselProps = {
   slides: Slide[],
@@ -79,7 +78,7 @@ export type CarouselProps = {
 //   )
 // }
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 
 const slideStyles = {
   width: "100%",
